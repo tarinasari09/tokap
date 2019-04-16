@@ -36,3 +36,4 @@ Route::post('/setting','UserSettingController@update');
 
 Auth::routes();
 
+Route::any('register', function(){ return abort(404); });
