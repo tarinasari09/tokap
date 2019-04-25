@@ -49,7 +49,11 @@ Route::post('/setting','UserSettingController@update');
 				Route::get('/','kategoriController@daftar')->name('admin.kategori');
 				Route::get('/add','kategoriController@add')->name('admin.kategori.add');
 				Route::post('/add','kategoriController@save');
+				Route::get('/edit/{id}','kategoriController@edit')->name('admin.kategori.edit');
+				Route::post('/edit/{id}','kategoriController@update');
 				});
+				
+			
 
 
 Auth::routes();

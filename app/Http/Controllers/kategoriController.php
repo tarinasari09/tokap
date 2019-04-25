@@ -23,7 +23,7 @@ class kategoriController extends Controller
     public function save(Request $req)
     {
 
-    	\Validator::make($req->all(), [
+    	\Validator::make($req->all(),[
     		'kategori'=>'required|between:3,100|unique:kategori,nama_kategori',
 			])->validate();
     	
@@ -39,4 +39,13 @@ class kategoriController extends Controller
     		return back()->with('result','fail')->withInput();
     	}
     }
+public function edit($id)
+{
+	$data = kategori::where('id',$id)->first();
+	return view('admin.pages.kategori.edit',['rc'=>$data]);
+}
+public function update(Request $req)
+{
+	return 'Fungsi Update';
+}
 }
