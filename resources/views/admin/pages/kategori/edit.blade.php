@@ -1,5 +1,5 @@
 @extends('admin.main')
-@section('title','Kategori Edit')
+@section('title','kategori Edit')
 @section('content')
 <h1>Kategori <small class="text-muted">Edit</small></h1>
 <hr>
@@ -20,12 +20,12 @@
 			<div class="card">
 
 				<div class="card header">
-					<h5>Ubah Data Kategoris</h5>
+					<h5>Ubah Data Kategori</h5>
 				</div><!-- End Card Header-->
 
 				<div class="card-body">
 					<div class="form-group form-label-group">
-						<input type="text" name="Kategori"
+						<input type="text" name="kategori"
 						class="form-control {{ $errors->has('kategori')?'is-invalid':'' }}"
 						value="{{ old('kategori', $rc->nama_kategori) }}"
 						id="iKategori" placeholder="Kategori" required>
