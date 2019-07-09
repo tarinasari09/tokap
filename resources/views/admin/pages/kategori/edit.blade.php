@@ -1,5 +1,5 @@
 @extends('admin.main')
-@section('title','kategori Edit')
+@section('title','Kategori Edit')
 @section('content')
 <h1>Kategori <small class="text-muted">Edit</small></h1>
 <hr>
