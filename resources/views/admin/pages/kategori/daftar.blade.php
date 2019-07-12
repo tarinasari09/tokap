@@ -24,7 +24,7 @@
 
 @if( session('result') == 'delete')
  <div class="alert alert-success alert-dismissible fade show">
-	<strong>Deleted !</strong> Berhasil dihapus.
+	<strong>Deleted!</strong> Berhasil dihapus.
 	<button type="button" class="close" data-dismiss="alert">
 			&times;
 	</button>

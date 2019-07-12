@@ -61,11 +61,13 @@ public function update(Request $req)
 
 			return back()->with('result','fail');
 		}
-}
+    }
+
     public function delete(Request $req)
     {
         $result = kategori::find($req->id);
-        if($result->delete()){
+
+        if ( $result->delete() ){
             return back()->with('result','delete');
         } else {
             return back()->with('result','fail-delete');

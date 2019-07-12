@@ -90,7 +90,7 @@ class UserController extends Controller
 
     public function delete(Request $req)
     {
-        $result = User::find($req->id);
+        $result =User::find($req->id);
 
         if ( $result->delete() ){
             return back()->with('result','delete');
