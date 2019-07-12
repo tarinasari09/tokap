@@ -41,7 +41,7 @@ Route::post('/edit/{id}','UserController@update')
 Route::get('/setting','UserSettingController@form')->name('admin.user.setting');
 Route::post('/setting','UserSettingController@update');
 		});
-	});
+	
 
 /* Kategori */
 
@@ -53,8 +53,11 @@ Route::post('/add','kategoriController@save');
 Route::get('/edit/{id}','kategoriController@edit')->name('admin.kategori.edit');
 Route::post('/edit/{id}','kategoriController@update');
 				});
-				
-			
+	/* Produk*/
+Route::group(['prefix'=>'produk','middleware'=>'akses.admin'], function(){
+	Route::get('/','ProdukController@daftar')->name('admin.produk');
+		});
+			});
 
 
 Auth::routes();

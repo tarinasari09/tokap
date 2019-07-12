@@ -13,11 +13,19 @@
           </a>
         </li>
 
+<li class="nav-item">
+<a class="nav-link" href="{{route('admin.kategori')}}">
+<i class="fas fa-fw fa-list"></i>
+<span>Kategori</span>
+          </a>
+        </li>
+
             <li class="nav-item">
-          <a class="nav-link" href="{{route('admin.kategori')}}">
-    <i class="fas fa-fw fa-list"></i>
-            <span>Kategori</span>
+          <a class="nav-link" href="{{route('admin.produk')}}">
+    <i class="fas fa-fw fa-cube"></i>
+            <span>Produk</span>
           </a>
         </li>
         @endif
+
          </ul>
